@@ -11,7 +11,7 @@ void PrintList(ofstream& outFile, SortedList<int>& list);
 
 int main()
 {
-	ifstream inFile;       // file containing operations
+	/*ifstream inFile;       // file containing operations
 	ofstream outFile;      // file containing output
 	string inFileName;     // input file external name
 	string outFileName;    // output file external name
@@ -104,7 +104,22 @@ int main()
 
 	cout << "Quit" << endl << "Testing completed." << endl;
 	inFile.close();
-	outFile.close();
+	outFile.close();*/
+
+    SortedList<int> s;
+
+    s.PutItem((4));
+    s.PutItem(5);
+    s.PutItem((1));
+    s.PutItem((2));
+    s.PutItem(3);
+    s.print();
+    s.DeleteItem(1);
+    s.print();
+    s.DeleteItem(5);
+    s.print();
+    s.DeleteItem((3));
+    s.print();
 	return 0;
 };
 

@@ -56,14 +56,16 @@ public:
   // Post: Current position is updated to next position.
   //       item is a copy of element at current position.
 
+  void print();
 private:
   struct NodeT {
       T info;
-      NodeT* next;
+      NodeT* next = nullptr;
   };
 
   int length;
   NodeT* head;
+  NodeT* iter;
 };
 
 #include "SortedList.cpp"
